@@ -3,73 +3,172 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-
     <title>Startup Registration</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <!-- Navbar -->
-
+  <body>
     <nav>
 
-       <nav>
+        <h1>PitchFund</h1>
+       
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="jury.html">Jury</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="winners.html">Winners</a></li>
 
-    <h1>PitchFund</h1>
+        </ul>
 
-    <ul>
-
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="events.html">Events</a></li>
-
-        <li><a href="register.html">Register</a></li>
-
-        <li><a href="jury.html">Jury</a></li>
-
-        <li><a href="sponsors.html">Sponsors</a></li>
-
-        <li><a href="contact.html">Contact</a></li>
-
-        <li><a href="winners.html">Winners</a></li>
-
-    </ul>
-
-</nav>
     </nav>
-
-
-    <!-- Registration Form -->
 
     <section>
 
         <h2>Startup Registration</h2>
 
+        <p>
+            Fill in the details below to apply for the upcoming PitchFund Startup Event.
+        </p>
+
+    </section>
+    <section>
+
+        <h2>1. Founder Details</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <input type="tel" placeholder="Phone Number" required>
+
+                <input type="text" placeholder="LinkedIn Profile">
+
+                <input type="text" placeholder="Educational Background">
+
+                <input type="text" placeholder="Team Members (if any)">
+            </form>
+
+    </section> 
+
+    <section>
+
+        <h2>2. Startup Information</h2>
+
         <form>
+            <input type="text" placeholder="Startup Name" required>
 
-            <input type="text" placeholder="Startup Name">
+         <select required>
+            <option value="">Select Industry</option>
+            <option>Technology</option>
+            <option>Healthcare</option>
+            <option>Education</option>
+            <option>Finance</option>
+            <option>E-Commerce</option>
+            <option>Agriculture</option>
+            <option>Others</option>
+         </select>
 
-            <input type="text" placeholder="Founder Name">
+            <select required>
+              <option value="">Select Incorporation Type</option>
+              <option>Private Limited</option>
+              <option>LLP</option>
+              <option>Partnership</option>
+              <option>Sole Proprietorship</option>
+            </select>
 
-            <input type="email" placeholder="Email Address">
+          <label>Date of Incorporation</label>
+          <input type="date">
 
-            <input type="text" placeholder="Phone Number">
-
-            <input type="text" placeholder="Startup Category">
-
-            <textarea placeholder="Describe Your Startup Idea"></textarea>
-
-            <button>Submit Application</button>
-
+          <input type="text" placeholder="Company Registration Number">
         </form>
 
     </section>
 
+    <section>
 
-    <!-- Footer -->
+        <h2>3. Business Overview</h2>
+
+        <form>
+             <textarea rows="4" placeholder="Problem Statement (What problem are you solving?)" required></textarea>
+
+             <textarea rows="4" placeholder="Solution Offered (How does your startup solve the problem?)" required></textarea>
+
+             <textarea rows="4" placeholder="Unique Selling Proposition (Why is your startup different?)"></textarea>
+
+             <input type="text" placeholder="Target Market (Example: Students, Small Businesses, Healthcare, etc.)">
+
+             <textarea rows="4" placeholder="Brief Description of Your Startup"></textarea>
+        </form>
+
+    </section>
+    <section>
+
+        <h2>4. Funding Details</h2>
+
+        <form>
+           <input type="number" placeholder="Funding Required (₹)" required>
+
+           <input type="number" placeholder="Equity Offered (%)" required>
+
+           <input type="text" placeholder="Previous Investments (If Any)">
+
+           <input type="text" placeholder="Current Annual Revenue">
+
+<select required>
+
+    <option value="">Current Startup Stage</option>
+
+    <option>Idea Stage</option>
+
+    <option>Prototype Ready</option>
+
+    <option>MVP Developed</option>
+
+    <option>Revenue Generating</option>
+
+    <option>Growth Stage</option>
+
+</select>
+
+     <textarea rows="4" placeholder="How will you utilize the funding?"></textarea>
+        </form>
+
+    </section>
+
+    <section>
+
+        <h2>5. Upload Documents</h2>
+
+        <form>
+         <label>Upload Startup Logo</label>
+         <input type="file" accept="image/*">
+
+         <label>Upload Pitch Deck (PDF)</label>
+         <input type="file" accept=".pdf">
+
+         <label>Upload Company Registration Certificate</label>
+         <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+
+         <label>Pitch Video Link</label>
+         <input type="url" placeholder="https://youtube.com/...">
+
+         <label>Additional Documents (Optional)</label>
+         <input type="file">
+        </form>
+
+    </section>
+
+    <section style="text-align:center;">
+
+    <button>Submit Startup Application</button>
+
+    </section>
 
     <footer>
 
@@ -77,6 +176,6 @@
 
     </footer>
 
-</body>
+  </body>
 
 </html>

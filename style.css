@@ -1,13 +1,24 @@
-body{
+
+*{
     margin:0;
-    font-family:Arial;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
     background:#0f172a;
     color:white;
 }
 
+/* ---------- Navigation ---------- */
+
 nav{
     background:#111827;
-    padding:15px;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 nav h1{
@@ -15,16 +26,24 @@ nav h1{
 }
 
 nav ul{
-    display:flex;
     list-style:none;
-    gap:15px;
-    padding:0;
+    display:flex;
+    gap:20px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
 }
+.hero a{
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+/* ---------- Hero ---------- */
 
 .hero{
     text-align:center;
@@ -33,64 +52,130 @@ nav a{
 
 .hero h2{
     font-size:40px;
+    margin-bottom:20px;
 }
 
 .hero p{
-    margin-top:15px;
+    margin-bottom:20px;
+    line-height:1.6;
 }
+
+/* ---------- Buttons ---------- */
 
 button{
     background:orange;
+    color:black;
     border:none;
     padding:10px 20px;
-    margin-top:20px;
+    margin:8px;
     cursor:pointer;
+    border-radius:5px;
+    font-weight:bold;
 }
+
+button:hover{
+    opacity:0.9;
+}
+
+/* ---------- Sections ---------- */
 
 section{
     padding:40px 20px;
 }
 
+h2{
+    margin-bottom:20px;
+}
+
+/* ---------- Cards ---------- */
+
 .card{
     background:#1e293b;
     padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+}
+
+.card:hover{
+    background:#334155;
+}
+
+/* ---------- Statistics ---------- */
+
+.stats{
+    text-align:center;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
     margin-top:20px;
 }
+
+.stat-card{
+    background:#1e293b;
+    width:180px;
+    padding:20px;
+    margin:10px;
+    border-radius:8px;
+}
+
+.stat-card h3{
+    color:orange;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+/* ---------- Countdown ---------- */
+
+.countdown{
+    text-align:center;
+    background:#1e293b;
+    padding:30px;
+    margin:20px;
+    border-radius:8px;
+}
+
+/* ---------- Forms ---------- */
 
 form{
     display:flex;
     flex-direction:column;
-    gap:10px;
+    margin-top:20px;
 }
 
 input,
-textarea{
-    padding:10px;
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
 }
+
+textarea{
+    resize:vertical;
+    font-family:Arial, sans-serif;
+}
+
+label{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+input[type="file"]{
+    background:white;
+    padding:8px;
+}
+
+/* ---------- Footer ---------- */
 
 footer{
     background:#111827;
     text-align:center;
     padding:20px;
     margin-top:40px;
-}
-.card:hover{
-    background:#334155;
-}
-
-button:hover{
-    opacity:0.9;
-}
-.countdown{
-    text-align:center;
-    background:#1e293b;
-    padding:30px;
-    margin:20px;
-}
-button:hover{
-    opacity:0.9;
-}
-
-.card:hover{
-    background:#334155;
 }
